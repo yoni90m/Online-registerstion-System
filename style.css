@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #17324d;
+    background: #eef5fb;
+    font-synthesis: none;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+}
+
+.site-header {
+    color: #fff;
+    background: #125b83;
+}
+
+.header-content,
+.navbar,
+main,
+footer {
+    width: min(100% - 2rem, 960px);
+    margin-inline: auto;
+}
+
+.header-content {
+    padding: 2rem 0 1.5rem;
+}
+
+.university-name,
+.eyebrow {
+    margin: 0 0 0.5rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+}
+
+.header-description {
+    margin: 0.75rem 0 0;
+    color: #e0eff8;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.75rem;
+    padding: 0 0 1rem;
+}
+
+.navbar a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+main {
+    padding-block: 2rem;
+}
+
+.registration-card {
+    padding: clamp(1.25rem, 4vw, 2.5rem);
+    border: 1px solid #d5e1eb;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgb(23 50 77 / 8%);
+}
+
+.section-heading {
+    margin-bottom: 1.75rem;
+}
+
+.section-heading .eyebrow {
+    color: #14749f;
+}
+
+.section-heading h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.7rem;
+}
+
+.section-heading p:last-child {
+    margin: 0;
+    color: #53687b;
+}
+
+form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+fieldset {
+    display: grid;
+    gap: 1rem;
+    min-width: 0;
+    margin: 0;
+    padding: 1.25rem;
+    border: 1px solid #d5e1eb;
+    border-radius: 8px;
+}
+
+legend {
+    padding: 0 0.4rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.form-group {
+    display: grid;
+    gap: 0.45rem;
+}
+
+.form-group label {
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.form-group label span,
+.section-heading span {
+    color: #b42318;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid #aebdcc;
+    border-radius: 5px;
+    background: #fff;
+    color: inherit;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #14749f;
+    outline: 3px solid rgb(20 116 159 / 18%);
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-status {
+    margin: 0;
+    color: #53687b;
+}
+
+button {
+    min-height: 46px;
+    padding: 0.75rem 1.25rem;
+    border: 0;
+    border-radius: 5px;
+    background: #125b83;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0c4667;
+}
+
+button:focus-visible {
+    outline: 3px solid #68b7dc;
+    outline-offset: 3px;
+}
+
+footer {
+    padding-block: 1rem 2rem;
+    color: #53687b;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.35rem 0;
+}
+
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    fieldset {
+        padding: 1rem;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+    background-color: aliceblue;
+}
